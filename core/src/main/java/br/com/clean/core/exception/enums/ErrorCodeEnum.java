@@ -2,6 +2,9 @@ package br.com.clean.core.exception.enums;
 
 public enum ErrorCodeEnum {
     ON0001("Tax Number inválido","ON-0001"),
+    ON0002("Tax Number indisponível","ON-0002"),
+
+    E0001("E-mail indisponível","E-0001"),
 
     TR0001("Usuário lojista não tem a função transferência disponível", "TR-0001"),
     TR0002("Saldo indisponível", "TR-0002"),
