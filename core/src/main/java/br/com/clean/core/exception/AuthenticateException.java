@@ -1,9 +1,9 @@
 package br.com.clean.core.exception;
 
-public class BadRequestException extends Exception{
+public class AuthenticateException extends Exception {
     private String code;
 
-    public BadRequestException(String message, String code) {
+    public AuthenticateException(String message, String code) {
         super(message);
         this.code = code;
     }
