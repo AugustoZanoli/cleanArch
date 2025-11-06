@@ -13,6 +13,8 @@ public enum ErrorCodeEnum {
     TR0003("Houve um erro ao realizar transferência.", "TR-0003"),
     TR0004("Transferência não autorizada", "TR-0004"),
 
+    PIN0001("Pin de transação bloqueado", "PIN-0001"),
+
     TRP0001("Pin inválido", "TRP-0001"),
 
     WA0001("Carteira não encontrada", "WA-0001"),
