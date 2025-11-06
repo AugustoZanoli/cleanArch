@@ -31,7 +31,7 @@ public class Transaction {
         this.updatedAt = updatedAt;
     }
 
-    public Transaction(Wallet fromWallet, Wallet toWallet, BigDecimal value, TransactionStatusEnum status) {
+    public Transaction(Wallet fromWallet, Wallet toWallet, BigDecimal value) {
         this.fromWallet = fromWallet;
         this.toWallet = toWallet;
         this.value = value;
