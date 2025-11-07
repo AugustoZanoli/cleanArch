@@ -1,4 +1,4 @@
-package br.com.clean.entity;
+package br.com.clean.infrastructure.entity;
 
 import br.com.clean.core.domain.enums.UserTypeEnum;
 import jakarta.persistence.*;
@@ -39,6 +39,6 @@ public class UserEntity {
     @Column(name = "CreatedAt", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "UpdatedAt", nullable = false)
+    @Column(name = "UpdatedAt")
     private LocalDateTime updatedAt;
 }

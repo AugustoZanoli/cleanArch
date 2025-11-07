@@ -1,6 +1,6 @@
-package br.com.clean.repository;
+package br.com.clean.infrastructure.repository;
 
-import br.com.clean.entity.UserEntity;
+import br.com.clean.infrastructure.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
