@@ -1,4 +1,4 @@
-package br.com.clean.entity;
+package br.com.clean.infrastructure.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -34,6 +34,14 @@ public class WalletsEntity {
     @Column(name = "CreatedAt", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "UpdatedAt", nullable = false)
+    @Column(name = "UpdatedAt")
     private LocalDateTime updatedAt;
+
+    public WalletsEntity(BigDecimal balance, UserEntity userEntity, TransactionPinEntity transactionPinEntity, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.balance = balance;
+        this.userEntity = userEntity;
+        this.transactionPinEntity = transactionPinEntity;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
 }
